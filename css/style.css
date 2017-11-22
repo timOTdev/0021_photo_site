@@ -19,9 +19,15 @@ p{
 hr {
   max-width: 30%;
 }
+.parallax-container {
+  max-height: 150px;
+}
+    
 
 /* Nav */
-
+#nav {
+  color: white;
+}
 /* Intro */
 #intro {
   height: 100vh;
@@ -39,7 +45,7 @@ hr {
 #instafeed img {
   border: 10px solid #ff80ab;
   border-radius: 50%;
-  max-width: 90%;
+  max-width: 80%;
   height: auto;
   display: inline-block;
   transition: all ease 0.3s;

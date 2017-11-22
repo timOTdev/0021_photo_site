@@ -10,33 +10,41 @@
   
   <body>
     <div id="main">
-      <div id="nav">
-        <nav class="grey darken-1">
-        <div class="nav-wrapper container">
-          <img src="assets/blue-bird_100x100.png" class="brand-logo left" />
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#main" class="pink-text text-accent-1">Introduction</a></li>
-            <li><a href="#portfolio" class="pink-text text-accent-1">Portfolio</a></li>
-            <li><a href="#contact" class="pink-text text-accent-1">Contact</a></li>
+      <section id="nav">
+        <div class="fixed-action-btn top">
+          <a class="btn-floating btn-large ">
+            <i class="large material-icons pink">menu</i>
+          </a>
+          <ul>
+            <li><a href="#main" class="btn-floating btn-large pink accent-1"><i class="material-icons">home</i></a></li>
+            <li><a href="#portfolio"class="btn-floating btn-large pink accent-1"><i class="material-icons">camera_alt</i></a></li>
+            <li><a href="#contact"class="btn-floating btn-large pink accent-1"><i class="material-icons">email</i></a></li>
           </ul>
         </div>
-        </nav><!--end nav-->
-      </div>
-      
+      </section>
+
       <section id="intro" class="center">
           <h1>Alex Ayres Photography</h1>
           <hr id="divider">
           <h2>Photography is Passion.</h2>
-          <p>My love for photography is the gift I share. My name is Alex from Austin, Texas and I want to capture the very best of you!</p>
+          <p class="flow-text">My love for photography is the gift I share. My name is Alex from Austin, Texas and I want to capture the very best of you!</p>
           <img src="assets/self-pic.png"/>
       </section><!--end #intro-->
       
+      <div class="parallax-container">
+          <div class="parallax"><img src="assets/parallax1.jpg"></div>
+        </div>
+
       <section id="portfolio" class="center">
         <h1>Portfolio</h1>
         <hr id="divider">
         <div id="instafeed" class="row"></div>
       </section><!--end #portfolio-->
       
+      <div class="parallax-container">
+          <div class="parallax"><img src="assets/parallax1.jpg"></div>
+        </div>
+
       <section id="contact" class="center">
           <h1>Contact</h1>
           <hr id="divider">
@@ -73,30 +81,12 @@
       </section><!--!end #contact-->
   
       <footer id="footer" class="page-footer grey darken-1">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="pink-text">Alex Ayres Photography</h5>
-              <p class="pink-text text-accent-1">Portfolio webpage for works of Alex Ayres based in Austin, Texas.</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="pink-text">Links</h5>
-              <ul>
-                <li><a href="#main" class="pink-text text-accent-1">Introduction</a></li>
-                <li><a href="#portfolio" class="pink-text text-accent-1">Portfolio</a></li>
-                <li><a href="#contact" class="pink-text text-accent-1">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer-copyright">
           <div class="container pink-text">
-          © 2017 Alex Ayres Photography
-          <a class="right pink-text" href="#!">More Links</a>
+            Portfolio webpage for works of Alex Ayres based in Austin, Texas.
+            <a class="right pink-text" href="#!">© 2017 Alex Ayres Photography</a>
           </div>
-        </div>
       </footer><!--end footer-->
-    </div>
+    </div><!--end #main-->
           
     <script type="text/javascript" src="js/instafeed.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
