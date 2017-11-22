@@ -20,5 +20,7 @@
   "dependencies": {
     "materialize-css": "^0.100.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "instafeed.js": "^1.4.1"
+  }
 }

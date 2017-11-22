@@ -1,0 +1,13 @@
+/* Defaults */
+body {
+  background: black;
+}
+/* Portfolio */
+#instafeed {
+  color: white;
+}
+#instafeed img {
+  margin: 50px;
+  border: 20px solid white;
+  border-radius: 20em;
+}
