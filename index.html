@@ -3,39 +3,76 @@
   <head>
     <title>Alex Ayres Photography</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Pacifico|Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
-
+  
   <body>
     <div id="main">
-
-    <nav>
-        <div class="nav-wrapper grey darken-1">
-          <a href="#" class="brand-logo left pink-text">Alex Ayres Photography</a>
+      <div id="nav">
+        <nav class="grey darken-1">
+        <div class="nav-wrapper container">
+          <img src="assets/blue-bird_100x100.png" class="brand-logo left" />
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#introduction" class="pink-text text-accent-1">Introduction</a></li>
+            <li><a href="#main" class="pink-text text-accent-1">Introduction</a></li>
             <li><a href="#portfolio" class="pink-text text-accent-1">Portfolio</a></li>
             <li><a href="#contact" class="pink-text text-accent-1">Contact</a></li>
           </ul>
         </div>
-      </nav><!--end nav-->
-  
+        </nav><!--end nav-->
+      </div>
+      
       <section id="intro" class="center">
-        <h1 class="pink-text">Alex Ayres Photography</h1>
+          <h1>Alex Ayres Photography</h1>
+          <hr id="divider">
+          <h2>Photography is Passion.</h2>
+          <p>My love for photography is the gift I share. My name is Alex from Austin, Texas and I want to capture the very best of you!</p>
+          <img src="assets/self-pic.png"/>
       </section><!--end #intro-->
       
       <section id="portfolio" class="center">
         <h1>Portfolio</h1>
-        <div id="instafeed"></div>
+        <hr id="divider">
+        <div id="instafeed" class="row"></div>
       </section><!--end #portfolio-->
       
       <section id="contact" class="center">
           <h1>Contact</h1>
+          <hr id="divider">
+          <div id="emailForm">
+              <form id="contact-form" method="POST">
+                  <ul>
+                      <li>
+                          <input type="hidden" name="From" value="timothyhoang.net" />
+                      </li>
+                      <li>
+                          <input type="text" name="_gotcha" style="display:none" />
+                      </li>                  
+                      <li>
+                          <p>If you'd like to get in touch with me, please send me a message. Thanks for visiting!</p>
+                      </li>
+                      <li>
+                          <input id="firstName" type="text" name="First Name" placeholder="First Name" required />                    
+                      </li>
+                      <li>
+                          <input id="lastName" type="text" name="Last Name" placeholder="Last Name" required />
+                      </li>
+                      <li>
+                          <input id="emailBox" type="email" name="Email" placeholder="Email" required />
+                      </li>
+                      <li>
+                          <textarea id="messageBox" type="text" name="Message" placeholder="Message" required></textarea>
+                      </li>
+                      <li>
+                          <input id="send" type="submit" value="Send" />
+                      </li>
+                  </ul>
+              </form>
+          </div>
       </section><!--!end #contact-->
   
-      <footer class="page-footer grey darken-1">
+      <footer id="footer" class="page-footer grey darken-1">
         <div class="container">
           <div class="row">
             <div class="col l6 s12">
@@ -45,8 +82,9 @@
             <div class="col l4 offset-l2 s12">
               <h5 class="pink-text">Links</h5>
               <ul>
-                <li><a class="pink-text text-accent-1" href="#!">Instagram</a></li>
-                <li><a class="pink-text text-accent-1" href="#!">Facebook</a></li>
+                <li><a href="#main" class="pink-text text-accent-1">Introduction</a></li>
+                <li><a href="#portfolio" class="pink-text text-accent-1">Portfolio</a></li>
+                <li><a href="#contact" class="pink-text text-accent-1">Contact</a></li>
               </ul>
             </div>
           </div>

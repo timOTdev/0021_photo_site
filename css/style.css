@@ -2,12 +2,53 @@
 body {
   background: black;
 }
+h1 {
+  color: #e91e63;
+  font-family: 'Pacifico', cursive;
+}
+h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: pink;
+  font-size: xx-large;
+}
+p{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: pink;
+  font-size: large;
+}
+hr {
+  max-width: 30%;
+}
+
+/* Nav */
+
+/* Intro */
+#intro {
+  height: 100vh;
+}
+#intro img {
+  border-radius: 10%;
+  border: 10px solid #ff80ab;
+}
+
 /* Portfolio */
 #instafeed {
+  padding-top: 1em;
   color: white;
 }
 #instafeed img {
-  margin: 50px;
-  border: 20px solid white;
-  border-radius: 20em;
+  border: 10px solid #ff80ab;
+  border-radius: 50%;
+  max-width: 90%;
+  height: auto;
+  display: inline-block;
+  transition: all ease 0.3s;
 }
+#instafeed img:hover {
+  transform: scale(1.02);
+}
+#likes, #comments {
+  display: block;
+}
+
+/* Contact */

@@ -6,8 +6,8 @@ var feed = new Instafeed({
   clientId: '0de945a7cbda48b3a0419a4b8e17b3f9',
   resolution: 'standard_resolution',
   sortBy: 'most-recent',
-  limit: 5,
+  limit: 6,
   links: true,
-  template: '<a href="{{link}}" id="{{id}}" target="_blank"><img src="{{image}}" /></a><p>Caption:{{caption}}Likes:{{likes}}Comments:{{comments}}</p>'
+  template: '<a href="{{link}}" id="{{id}}" target="_blank"><div class="col s12 m6 l4"><img src="{{image}}" class="responsive-img" /><p>{{caption}}<span id="likes">Likes: {{likes}}</span><span id="comments">Comments: {{comments}}</span></p></div></a>'
 });
 feed.run();
