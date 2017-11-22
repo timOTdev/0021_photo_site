@@ -1,0 +1,24 @@
+{
+  "name": "photo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timh1203/photo-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timh1203/photo-app/issues"
+  },
+  "homepage": "https://github.com/timh1203/photo-app#readme",
+  "dependencies": {
+    "materialize-css": "^0.100.2"
+  },
+  "devDependencies": {}
+}
