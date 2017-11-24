@@ -1,6 +1,8 @@
 /* Defaults */
-body {
+html {
   background: black;
+  margin: 0;
+  padding: 0;
 }
 h1 {
   color: #e91e63;
@@ -22,14 +24,16 @@ hr {
 .parallax-container {
   max-height: 150px;
 }
-    
 
 /* Nav */
 #nav {
   color: white;
 }
+
 /* Intro */
 #intro {
+  margin: 20px;
+  padding: 20px;
   height: 100vh;
 }
 #intro img {
@@ -44,8 +48,8 @@ hr {
 }
 #instafeed img {
   border: 10px solid #ff80ab;
-  border-radius: 50%;
-  max-width: 80%;
+  border-radius: 10%;
+  max-width: 90%;
   height: auto;
   display: inline-block;
   transition: all ease 0.3s;
@@ -56,5 +60,40 @@ hr {
 #likes, #comments {
   display: block;
 }
+#instagramLink {
+  border: 10px solid #ff80ab;
+  border-radius: 5%;
+  background: white;
+  color: black;
+  font-size: 2em;
+  padding: 1%;
+  margin: 1%;
+}
 
 /* Contact */
+#emailForm {
+  color: pink;
+  background: black;
+  border: 10px solid #e91e63;
+  border-radius: 1%;
+  max-width: 50%;
+  margin: 1% auto;
+  padding: 3%;
+}
+#emailForm p {
+  font-size: 2em;
+  text-align: center;
+}
+#send {
+  border: 10px solid #ff80ab;
+  border-radius: 5%;
+  background: white;
+  color: black;
+  font-size: 2em;
+  padding: 1%;
+  margin: 1%;
+}
+/* Footer */
+footer p {
+  color: pink;
+}

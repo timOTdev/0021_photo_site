@@ -15,7 +15,3 @@ var feed = new Instafeed({
   template: '<a href="{{link}}" id="{{id}}" target="_blank"><div class="col s12 m6 l4"><img src="{{image}}" class="responsive-img" /><p>{{caption}}<span id="likes">Likes: {{likes}}</span><span id="comments">Comments: {{comments}}</span></p></div></a>'
 });
 feed.run();
-
-// window.onload = function() {
-//   document.getElementById('preloader').style.display = "none";
-// }
