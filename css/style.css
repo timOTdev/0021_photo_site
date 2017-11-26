@@ -11,12 +11,12 @@ h1 {
 h2 {
   font-family: 'Open Sans Condensed', sans-serif;
   color: pink;
-  font-size: xx-large;
+  font-size: 3em;
 }
-p{
+p {
   font-family: 'Open Sans Condensed', sans-serif;
   color: pink;
-  font-size: large;
+  font-size: 2em;
 }
 hr {
   max-width: 30%;
@@ -40,12 +40,14 @@ hr {
   border-radius: 10%;
   border: 10px solid #ff80ab;
   padding: 1em;
-  box-shadow: 20px 20px 20px pink;
+  box-shadow: 15px 15px 20px pink;
 }
 
 /* Portfolio */
 .parent {
+  display: inline-block;
   position: relative;
+  border-radius: 90%;
 }
 .popup {
   display: none;
@@ -56,12 +58,12 @@ hr {
 .picture {
   border: 10px solid #ff80ab;
   border-radius: 10%;
-  max-width: 90%;
+  width: 95%;
   padding: 1em;
   margin: 1em;
   transition: all ease 0.3s;
 }
-.picture:hover {
+.parent:hover .picture {
   transform: scale(1.02);
   opacity: 0.5;
 }
@@ -80,69 +82,93 @@ hr {
   color: white;
   text-shadow: 1px 1px 2px black;
 }
-/* #parent {
-  position: relative;
-}
-#popup {
-  display: none;
-}
-#parent img:hover #popup {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-#parent {
-  position: relative;
-  border: 10px solid #ff80ab;
-  border-radius: 10%;
-  max-width: 90%;
-  height: auto;
-  display: inline-block;
-  transition: all ease 0.3s;
-}
-#parent:hover {
-  transform: scale(1.02);
-  opacity: 0.5;
-} */
-
 #likes, #comments {
   display: block;
-}
-#instagramLink {
-  border: 10px solid #ff80ab;
-  border-radius: 5%;
-  background: white;
-  color: black;
-  font-size: 2em;
-  padding: 1%;
-  margin: 1%;
 }
 
 /* Contact */
 #emailForm {
-  color: pink;
-  background: black;
-  border: 10px solid #e91e63;
-  border-radius: 1%;
-  max-width: 50%;
-  margin: 1% auto;
-  padding: 3%;
-}
-#emailForm p {
-  font-size: 2em;
-  text-align: center;
-}
-#send {
+  background: url('../assets/postcard-bg-original.png') center no-repeat;
+  background-size: cover;
   border: 10px solid #ff80ab;
+  max-width: 50%;
+  margin: 3% auto;
+  padding: 3%;
+  border-radius: 1%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: black;
+}
+#contact-form {
+  transform:translateY(3%);
+}
+#firstName, #emailBox {
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: right;
+  border-bottom: 3px solid #ff80ab;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.3em;
+}
+#emailForm textarea {
+  max-width: 70%;
+  height: auto;
+  border: 3px solid #ff80ab;
+  font-family: 'Pacifico', cursive;
+  color: black;
+  font-size: 1.3em;
+}
+#emailForm input:focus {
+  color: black;
+  outline-style: none;
+  box-shadow: none;
+  border-color: black;
+  border-width: 3px;
+}
+#emailForm textarea:focus {
+  outline-style: none;
+  box-shadow: none;
+  border: 3px solid black;
+}
+#emailForm input::placeholder, textarea::placeholder {
+  color: #e91e63;
+  opacity: 0.5;
+}
+#date {
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: right;
+  font-family: 'Pacifico', cursive;
+  color: black;
+}
+#hi {
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: left;
+  font-family: 'Pacifico', cursive;
+  color: black;
+}
+#sincerely{
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: right;
+  font-family: 'Pacifico', cursive;
+  color: black;
+}
+#send, #igLink {
+  border: 5px solid #ff80ab;
   border-radius: 5%;
   background: white;
   color: black;
-  font-size: 2em;
+  font-size: 1.3em;
   padding: 1%;
   margin: 1%;
+  font-family: 'Pacifico', cursive;
 }
+#send:hover, #igLink:hover {
+  color: #ff80ab;
+  background: black;
+}
+
 /* Footer */
 footer p {
   color: pink;

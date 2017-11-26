@@ -1,5 +1,14 @@
 $(document).ready(function(){
   $('.parallax').parallax();
+  var n =  new Date();
+  var monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+  
+  var y = n.getFullYear();
+  var m = n.getMonth() + 1;
+  var d = n.getDate();
+  document.getElementById("date").innerHTML = monthNames[n.getMonth()] + " " + d + "," + y;
 });
 
 var portfolio = document.getElementById("portfolio");

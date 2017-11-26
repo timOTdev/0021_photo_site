@@ -20,7 +20,7 @@
             <li><a href="#portfolio"class="btn-floating btn-large pink accent-1"><i class="material-icons">camera_alt</i></a></li>
             <li><a href="#contact"class="btn-floating btn-large pink accent-1"><i class="material-icons">email</i></a></li>
           </ul>
-        </div>
+        </div><!--end .fixed-action-btn top-->
       </section><!--end #nav-->
 
       <section id="intro" class="center">
@@ -28,7 +28,7 @@
         <h1>Alex Ayres Photography</h1>
         <hr id="divider">
           <h2>Photography is Passion.</h2>
-          <p class="flow-text">My love for photography is the gift I share. My name is Alex from Austin, Texas and I want to capture the very best of you!</p>
+          <p class="flow-text">My name is Alex from Austin, Texas and I want to capture the very best of you!</p>
       </section><!--end #intro-->
       
       <div class="parallax-container">
@@ -39,7 +39,8 @@
         <h1>Portfolio</h1>
         <hr id="divider">
         <div id="instafeed" class="row"></div>
-        <a href="https://www.instagram.com/alexayresphotography/" target="_blank"><button id="instagramLink">More pictures!</button></a>
+        <a href="https://www.instagram.com/alexayresphotography/" target="_blank">
+        <button id="igLink">More pictures!</button></a>
       </section><!--end #portfolio-->
       
       <div class="parallax-container">
@@ -49,66 +50,70 @@
       <section id="contact" class="center">
           <h1>Contact</h1>
           <hr id="divider">
+          <p>If you'd like to get in touch with me, please send me a message. Thanks for visiting!</p>
           <div id="emailForm">
               <form id="contact-form" method="POST">
                   <ul>
                       <li>
-                          <input type="hidden" name="From" value="timothyhoang.net" />
+                        <input type="hidden" name="From" value="aaphotography.net" />
                       </li>
                       <li>
-                          <input type="text" name="_gotcha" style="display:none" />
-                      </li>                  
+                        <input type="text" name="_gotcha" style="display:none" />
+                      </li>         
                       <li>
-                          <p>If you'd like to get in touch with me, please send me a message. Thanks for visiting!</p>
+                        <p id="date">date</p>
+                      </li>  
+                      <li>
+                        <p id="hi">Hi Alex,</p>
                       </li>
                       <li>
-                          <input id="firstName" type="text" name="First Name" placeholder="First Name" required />                    
+                        <textarea id="messageBox" type="text" name="Message" placeholder="Message" rows="6" required></textarea>
                       </li>
                       <li>
-                          <input id="lastName" type="text" name="Last Name" placeholder="Last Name" required />
+                        <p id="sincerely">Sincerely,</p>
                       </li>
                       <li>
-                          <input id="emailBox" type="email" name="Email" placeholder="Email" required />
+                        <input id="firstName" type="text" name="First Name" placeholder="First and Last" required />
                       </li>
                       <li>
-                          <textarea id="messageBox" type="text" name="Message" placeholder="Message" required></textarea>
+                        <input id="emailBox" type="email" name="Email" placeholder="Email" required />
                       </li>
                       <li>
-                          <input id="send" type="submit" value="Send" />
+                        <input id="send" type="submit" value="Send!" />
                       </li>
                   </ul>
               </form>
-          </div>
-      </section><!--!end #contact-->
+          </div><!--end #emailForm-->
+      </section><!--end #contact-->
 
       <footer class="page-footer">
-            <div class="container">
-              <div class="row">
-                <div class="col l6 s12">
-                  <h5 class="white-text">About</h5>
-                  <p class="grey-text text-lighten-4">Portfolio webpage for works of Alex Ayres based in Austin, Texas.</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                  <h5 class="white-text">Social Links</h5>
-                  <ul>
-                    <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
-                  </ul>
-                </div>
-              </div>
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">About</h5>
+              <p class="grey-text text-lighten-4">Portfolio webpage for works of Alex Ayres based in Austin, Texas.</p>
             </div>
-            <div class="footer-copyright">
-              <div class="container center">
-                © 2017 Alex Ayres Photography
-              </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Social Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+              </ul>
             </div>
-          </footer>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container center">
+            © 2017 Alex Ayres Photography
+          </div>
+        </div>
+      </footer>
 
-        <script type="text/javascript" src="js/instafeed.min.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
+      <script type="text/javascript" src="js/instafeed.min.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
     </div><!--end #main-->
-    </body><!--end body-->
+  </body><!--end body-->
 </html><!--end html-->
       
