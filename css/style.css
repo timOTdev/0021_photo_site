@@ -39,14 +39,62 @@ hr {
 #intro img {
   border-radius: 10%;
   border: 10px solid #ff80ab;
+  padding: 1em;
+  box-shadow: 20px 20px 20px pink;
 }
 
 /* Portfolio */
-#instafeed {
-  padding-top: 1em;
-  color: white;
+.parent {
+  position: relative;
 }
-#instafeed img {
+.popup {
+  display: none;
+  color: #ffc0cb;
+  font-size: 2em;
+  text-shadow: 1px 1px 2px black;
+}
+.picture {
+  border: 10px solid #ff80ab;
+  border-radius: 10%;
+  max-width: 90%;
+  padding: 1em;
+  margin: 1em;
+  transition: all ease 0.3s;
+}
+.picture:hover {
+  transform: scale(1.02);
+  opacity: 0.5;
+}
+.parent:hover .popup {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#likes {
+  color: red;
+  text-shadow: 1px 1px 2px black;
+}
+#comments {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+/* #parent {
+  position: relative;
+}
+#popup {
+  display: none;
+}
+#parent img:hover #popup {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#parent {
+  position: relative;
   border: 10px solid #ff80ab;
   border-radius: 10%;
   max-width: 90%;
@@ -54,9 +102,11 @@ hr {
   display: inline-block;
   transition: all ease 0.3s;
 }
-#instafeed img:hover {
+#parent:hover {
   transform: scale(1.02);
-}
+  opacity: 0.5;
+} */
+
 #likes, #comments {
   display: block;
 }

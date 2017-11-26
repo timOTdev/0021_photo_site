@@ -12,6 +12,7 @@ var feed = new Instafeed({
   sortBy: 'most-recent',
   limit: 12,
   links: true,
-  template: '<a href="{{link}}" id="{{id}}" target="_blank"><div class="col s12 m6 l4"><img src="{{image}}" class="responsive-img" /><p>{{caption}}<span id="likes">Likes: {{likes}}</span><span id="comments">Comments: {{comments}}</span></p></div></a>'
+  template: '<div class="parent col s12 m6 l4"><a href="{{link}}" target="_blank"><img class="picture" src="{{image}}" class="responsive-img"/><div class="popup">{{caption}}<span id="likes">{{likes}} <i class="material-icons">favorite</i></span><span id="comments">{{comments}} <i class="material-icons favorite">chat_bubble_outline</i></span></div></a></div>'
+  // template: '<a href="{{link}}" id="{{id}}" target="_blank"><div class="col s12 m6 l4"><img src="{{image}}" class="responsive-img" /><p>{{caption}}<span id="likes">Likes: {{likes}}</span><span id="comments">Comments: {{comments}}</span></p></div></a>'
 });
 feed.run();
