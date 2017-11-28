@@ -25,6 +25,25 @@ hr {
   max-height: 150px;
 }
 
+body{
+  width: 100%;
+
+  overflow-x: hidden;
+}
+
+.preloader-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;	
+}
+
 /* Nav */
 #nav {
   color: white;
@@ -161,7 +180,7 @@ hr {
   color: black;
   font-size: 1.3em;
   padding: 1%;
-  margin: 1%;
+  margin: 3%;
   font-family: 'Pacifico', cursive;
 }
 #send:hover, #igLink:hover {
@@ -172,4 +191,5 @@ hr {
 /* Footer */
 footer p {
   color: pink;
+  font-size: 1.5em;
 }
