@@ -4,31 +4,35 @@ html {
   margin: 0;
   padding: 0;
 }
+
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
 h1 {
   color: #e91e63;
   font-family: 'Pacifico', cursive;
 }
+
 h2 {
   font-family: 'Open Sans Condensed', sans-serif;
   color: pink;
   font-size: 3em;
 }
+
 p {
   font-family: 'Open Sans Condensed', sans-serif;
   color: pink;
   font-size: 2em;
 }
+
 hr {
   max-width: 30%;
 }
+
 .parallax-container {
-  max-height: 150px;
-}
-
-body{
-  width: 100%;
-
-  overflow-x: hidden;
+  height: 150px;
 }
 
 .preloader-wrapper {
