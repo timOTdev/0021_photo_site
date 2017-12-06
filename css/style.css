@@ -57,13 +57,39 @@ hr {
 #intro {
   margin: 20px;
   padding: 20px;
-  height: 100vh;
 }
 #intro img {
   border-radius: 10%;
   border: 10px solid #ff80ab;
   padding: 1em;
   box-shadow: 15px 15px 20px pink;
+}
+#top-animation {
+  font-family: 'Open Sans Condensed', sans-serif;
+  display: inline-block;
+  width: 45%;
+  font-size: 12em;
+  transform: rotate(-5deg);
+  background: #ff80ab;
+  transition: all 0.35s;
+  border-radius: 50%;
+  text-shadow: 2px 2px white;
+}
+#top-animation:hover {
+  text-shadow: 2px 2px 5px black;
+  transform: scale(1.20);
+}
+#bottom-animation {
+  text-decoration: underline;
+  font-size: 5em;
+  transform: rotate(-5deg);
+  transition: all 0.35s;
+}
+#bottom-animation:hover {
+  text-decoration: none;
+  text-shadow: 2px 2px white;
+  transform: scale(1.10);
+  letter-spacing: 20px;
 }
 
 /* Portfolio */
