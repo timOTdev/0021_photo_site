@@ -81,6 +81,7 @@ hr {
 }
 #bottom-animation {
   text-decoration: underline;
+  text-align: center;
   font-size: 5em;
   transform: rotate(-5deg);
   transition: all 0.35s;
@@ -101,7 +102,7 @@ hr {
 .popup {
   display: none;
   color: #ffc0cb;
-  font-size: 2em;
+  font-size: 1.25em;
   text-shadow: 1px 1px 2px black;
 }
 .picture {
@@ -222,4 +223,301 @@ hr {
 footer p {
   color: pink;
   font-size: 1.5em;
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1224px) {
+  /* Intro */
+  #top-animation {
+    font-size: 12em;
+  }
+/* Portfolio */
+  .popup {
+    display: none;
+    color: #ffc0cb;
+    font-size: 1em;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  /* Contact */
+  #emailForm {
+    background: url('../assets/postcard-bg-original.png') center no-repeat;
+    background-size: cover;
+    border: 10px solid #ff80ab;
+    max-width: 90%;
+    margin: 3% auto;
+    padding: 3%;
+    border-radius: 1%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+  }
+  #date {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: right;
+    font-family: 'Pacifico', cursive;
+    color: black;
+    font-size: 1.5em;
+  }
+  #hi {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Pacifico', cursive;
+    color: black;
+    font-size: 1.5em;
+  }
+  #sincerely{
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: right;
+    font-family: 'Pacifico', cursive;
+    color: black;
+    font-size: 1.5em;
+  }
+  
+  /* Footer */
+  footer p {
+    text-align: center;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* Intro */
+  #top-animation {
+    font-size: 8em;
+  }
+  /* Portfolio */
+  .popup {
+    display: none;
+    color: #ffc0cb;
+    font-size: 1.25em;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  /* Contact */
+  #emailForm {
+    background: url('../assets/postcard-bg-original.png') center no-repeat;
+    background-size: cover;
+    border: 10px solid #ff80ab;
+    max-width: 90%;
+    margin: 3% auto;
+    padding: 3%;
+    border-radius: 1%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+  }
+  #date {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: right;
+    font-family: 'Pacifico', cursive;
+    color: black;
+    font-size: 1.5em;
+  }
+  #hi {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Pacifico', cursive;
+    color: black;
+    font-size: 1.5em;
+  }
+  #sincerely{
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: right;
+    font-family: 'Pacifico', cursive;
+    color: black;
+    font-size: 1.5em;
+  }
+
+  /* Footer */
+  footer p {
+    text-align: center;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Intro */
+  #intro img {
+    width: 80%;
+  }
+
+  #intro h1 {
+    width: 80%;
+  }
+  
+  /* Portfolio */
+  .popup {
+    display: none;
+    color: #ffc0cb;
+    font-size: 1.20em;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  /* Contact */
+  #emailForm {
+    background: url('../assets/postcard-bg-original.png') center no-repeat;
+    background-size: cover;
+    border: 10px solid #ff80ab;
+    max-width: 90%;
+    margin: 3% auto;
+    padding: 3%;
+    border-radius: 1%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+  }
+  #date {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: right;
+    font-family: 'Pacifico', cursive;
+    color: black;
+    font-size: 1.5em;
+  }
+  #hi {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Pacifico', cursive;
+    color: black;
+    font-size: 1.5em;
+  }
+  #sincerely{
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: right;
+    font-family: 'Pacifico', cursive;
+    color: black;
+    font-size: 1.5em;
+  }
+
+  /* Footer */
+  footer p {
+    text-align: center;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Intro */
+  #intro img {
+    width: 80%;
+  }
+
+  #top-animation {
+    width: 80%;
+    font-size: 8em;
+  }
+  #bottom-animation {
+    width: 80%;
+    font-size: 3em;
+    transform: translateX(5%) rotate(-5deg);
+  }
+  #bottom-animation:hover {
+    transform: scale(1.05);
+    letter-spacing: 3px;
+  }
+
+  /* Portfolio */
+  .parent {
+    display: inline-block;
+    position: relative;
+    border-radius: 90%;
+  }
+  .popup {
+    display: none;
+    color: #ffc0cb;
+    font-size: 1em;
+    text-shadow: 1px 1px 2px black;
+  }
+  .picture {
+    border: 10px solid #ff80ab;
+    border-radius: 10%;
+    width: 95%;
+    padding: 1em;
+    margin: 1em;
+    transition: all ease 0.3s;
+  }
+  .parent:hover .picture {
+    transform: scale(1.02);
+    opacity: 0.5;
+  }
+  .parent:hover .popup {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #likes {
+    color: red;
+    text-shadow: 1px 1px 2px black;
+  }
+  #comments {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+  #likes, #comments {
+    display: block;
+  }
+
+  /* Contact */
+  #emailForm {
+    background: url('../assets/postcard-bg-original.png') center no-repeat;
+    background-size: cover;
+    border: 10px solid #ff80ab;
+    max-width: 90%;
+    margin: 3% auto;
+    padding: 3%;
+    border-radius: 1%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+  }
+  #date {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: right;
+    font-family: 'Pacifico', cursive;
+    color: black;
+    font-size: 1em;
+  }
+  #hi {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Pacifico', cursive;
+    color: black;
+    font-size: 1em;
+  }
+  #sincerely{
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: right;
+    font-family: 'Pacifico', cursive;
+    color: black;
+    font-size: 1em;
+  }
+
+  /* Footer */
+  footer p {
+    text-align: center;
+  }
 }

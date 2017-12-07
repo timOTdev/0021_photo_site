@@ -29,7 +29,3 @@ $(window).on('load', function(){
   $('.preloader-wrapper').remove();
 });
 
-
-var button = document.getElementById("button");
-button.onClick
-
